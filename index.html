@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTech Sustentável - O Futuro da Agricultura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <h1>Agro<span>Sustentável</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#simulador">Simulador Agro</a></li>
+                    <li><a href="#sobre">Sobre o Projeto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="banner">
+        <div class="interface">
+            <div class="txt-banner">
+                <h2>Agro Forte, Futuro Sustentável</h2>
+                <p>Descubra como a tecnologia e o equilíbrio com o meio ambiente estão moldando a nova era da produção agrícola digital.</p>
+                <a href="#tecnologias"><button>Explorar Tecnologias</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="tecnologias-container">
+        <div class="interface">
+            <h2 class="titulo-secao">Tecnologias no Campo</h2>
+            <div class="cards-flex">
+                <div class="card">
+                    <h3>Drones e Sensores</h3>
+                    <p>Mapeamento aéreo e análise do solo em tempo real para otimizar o uso de água e insumos, evitando desperdícios.</p>
+                </div>
+                <div class="card">
+                    <h3>IA e Big Data</h3>
+                    <p>Algoritmos que prevêem condições climáticas e pragas, permitindo ações preventivas e mais seguras ao ecossistema.</p>
+                </div>
+                <div class="card">
+                    <h3>Maquinário Autônomo</h3>
+                    <p>Tratores e colheitadeiras guiados por GPS que reduzem a compactação do solo e a emissão de gases poluentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="simulador-container">
+        <div class="interface">
+            <h2 class="titulo-secao">Simulador de Impacto Tecnológico</h2>
+            <p class="subtitulo">Escolha uma tecnologia para aplicar na sua fazenda virtual e veja o resultado no equilíbrio da produção!</p>
+            
+            <div class="botoes-simulador">
+                <button onclick="simular('tradicional')">Prática Tradicional</button>
+                <button onclick="simular('drones')">Inserir Drones de Irrigação</button>
+                <button onclick="simular('ia')">Aplicar IA de Manejo</button>
+            </div>
+
+            <div id="painel-resultado" class="painel">
+                <h3>Status da Fazenda</h3>
+                <div class="status-grid">
+                    <p>Produtividade: <span id="val-produtividade">50%</span></p>
+                    <p>Uso de Água: <span id="val-agua">100%</span></p>
+                    <p>Impacto Ambiental: <span id="val-impacto">Moderado</span></p>
+                </div>
+                <p id="mensagem-feedback" class="feedback">Selecione uma opção acima para iniciar a simulação tecnológica.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="interface">
+            <p>&copy; 2026 Projeto Concurso Agrinho - Subcategoria 3.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
